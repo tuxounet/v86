@@ -6,7 +6,7 @@ OUT_ROOTFS_TAR="$IMAGES"/debian-9p-rootfs.tar
 OUT_ROOTFS_FLAT="$IMAGES"/debian-9p-rootfs-flat
 OUT_FSJSON="$IMAGES"/debian-base-fs.json
 CONTAINER_NAME=debian-full
-IMAGE_NAME=i386/debian-full
+IMAGE_NAME=localhost/i386/debian-full
 
 mkdir -p "$IMAGES"
 docker build . --platform linux/386 --rm --tag "$IMAGE_NAME"
