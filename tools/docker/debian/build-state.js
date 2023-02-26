@@ -50,7 +50,7 @@ emulator.add_listener("serial0-output-char", function(c)
 
     serial_text += c;
 
-    if(!booted && serial_text.endsWith("root@localhost:~# "))
+    if(!booted && serial_text.endsWith("root@debuerreotype:~# "))
     {
         console.error("\nBooted in %d", (Date.now() - boot_start) / 1000);
         booted = true;
